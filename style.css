@@ -72,6 +72,52 @@ nav a {
   background-color: #8e50de;
 }
 
+.mobile-menu {
+  display: none;
+}
+.mobile-menu i {
+  font-size: 2.3rem;
+}
+
+.menu-close {
+  display: none;
+}
+
+.menu-open.active {
+  /* color: red; */
+  display: none;
+}
+
+.menu-close.active {
+  display: block;
+}
+
+.open-menu-content {
+  position: absolute;
+  left: 0;
+  top: 3rem;
+  width: 100%;
+  background-color: #eeeeee;
+}
+
+.open-menu-content a {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.mob-menu-items {
+  display: none;
+}
+
+.mob-menu-items.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 3rem;
+  gap: 2rem;
+}
+
 section {
   padding: 0 15rem;
 }
@@ -224,6 +270,9 @@ section {
   #nav-right a {
     font-size: 1rem;
   }
+  .mobile-menu {
+    display: none;
+  }
 
   section {
     padding: 0 5rem;
@@ -296,6 +345,11 @@ section {
   #nav-right {
     display: none;
   }
+
+  .mobile-menu {
+    display: block;
+  }
+
   section {
     padding: 0 2rem;
   }
@@ -373,6 +427,14 @@ section {
     display: none;
   }
 
+  .mobile-menu {
+    display: block;
+  }
+
+  .mob-menu-items.active {
+    padding: 2rem;
+  }
+
   section {
     padding: 0 1rem;
   }
@@ -439,5 +501,3 @@ section {
     text-align: center;
   }
 }
-
-
