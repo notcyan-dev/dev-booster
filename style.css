@@ -208,10 +208,9 @@ section {
 }
 
 /* responsive */
-@media (max-width: 450px) {
+@media (max-width: 1028px) {
   nav {
-    /* background: rebeccapurple; */
-    padding: 1rem 1rem;
+    padding: 0.7rem 5rem;
   }
 
   nav a {
@@ -219,46 +218,45 @@ section {
   }
 
   #nav-right {
-    display: none;
+    gap: 2rem;
+  }
+
+  #nav-right a {
+    font-size: 1rem;
   }
 
   section {
-    padding: 0 1rem;
-  }
-
-  .hero-img {
-    aspect-ratio: 9/16;
-    border-radius: 1rem;
+    padding: 0 5rem;
   }
 
   .hero-img h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   #description {
-    margin-top: 2rem;
+    margin-top: 3rem;
   }
 
   #description .section-text {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
+    font-size: 1.7rem;
+    margin-bottom: 3rem;
   }
 
   #description img {
-    width: 100%;
-    border-radius: 1rem;
-    aspect-ratio: 4/3;
+    width: 350px;
+  }
+
+  #description img:hover {
+    scale: 1.02;
   }
 
   .des-item {
-    flex-direction: column;
-    gap: 2rem;
-    /* background-color: red; */
-    margin-bottom: 4rem;
+    gap: 5rem;
+    margin-bottom: 2rem;
   }
 
   .des-item h1 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
 
   .des-item p {
@@ -266,31 +264,23 @@ section {
   }
 
   .btn {
-    margin: 1rem;
+    margin: 7rem;
   }
 
   #down-btn a {
-    color: white;
-    background-color: #8e50de;
     font-size: 1rem;
   }
 
   .footer {
     margin-top: 5rem;
-    padding: 2rem;
   }
 
   .footer-brand h1 {
-    font-size: 1rem;
-  }
-
-  .footer-copy p {
-    font-size: 0.7rem;
-    text-align: center;
+    font-size: 1.7rem;
   }
 }
 
-/* @media (max-width: 800px) {
+@media (max-width: 800px) {
   nav {
     padding: 1rem 2rem;
   }
@@ -368,4 +358,86 @@ section {
   .footer-copy p {
     font-size: 0.8rem;
   }
-} */
+}
+
+@media (max-width: 450px) {
+  nav {
+    padding: 1rem 1rem;
+  }
+
+  nav a {
+    font-size: 1.7rem;
+  }
+
+  #nav-right {
+    display: none;
+  }
+
+  section {
+    padding: 0 1rem;
+  }
+
+  .hero-img {
+    aspect-ratio: 9/16;
+    border-radius: 1rem;
+  }
+
+  .hero-img h1 {
+    font-size: 2rem;
+  }
+
+  #description {
+    margin-top: 2rem;
+  }
+
+  #description .section-text {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  #description img {
+    width: 100%;
+    border-radius: 1rem;
+    aspect-ratio: 4/3;
+  }
+
+  .des-item {
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .des-item h1 {
+    font-size: 1.5rem;
+  }
+
+  .des-item p {
+    font-size: 1.1rem;
+  }
+
+  .btn {
+    margin: 1rem;
+  }
+
+  #down-btn a {
+    color: white;
+    background-color: #8e50de;
+    font-size: 1rem;
+  }
+
+  .footer {
+    margin-top: 5rem;
+    padding: 2rem;
+  }
+
+  .footer-brand h1 {
+    font-size: 1rem;
+  }
+
+  .footer-copy p {
+    font-size: 0.7rem;
+    text-align: center;
+  }
+}
+
+
